@@ -1,7 +1,7 @@
 #e-kalterta {
 
 
-	background-color: blue;
+	background-color: #2aa2d4;
 display: flex;
 }
 #social {
@@ -10,6 +10,19 @@ display: flex;
 
 	
 }
+#plusi {
+	border-style: none;
+	background-color: #2aa2d4;
+	margin-top: 0;
+	color:white;
+	text-decoration:none;
+	font-size: 35px;
+	margin-left: 93%;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	width: 45px;
+}
+
 #login {
 	flex: 1;
 	padding-right: 0.5%;
