@@ -16,14 +16,14 @@ display: flex;
 	padding-top: 1.5%;
 	text-align: right;
 color:white;
-
+text-decoration:none;
 }
 #sociallist {
 
 	list-style-type: none;
 	padding-left: 1%;
-	padding-top: 0.005%;
-	padding-bottom: 0.005%;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 li{
 	display:inline;
