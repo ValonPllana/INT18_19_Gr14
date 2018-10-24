@@ -1,0 +1,55 @@
+body{
+			margin: 0px;
+		}
+		footer{
+			margin-bottom: 0px;
+			padding: 0px;	
+			background: black;
+			min-width: 100%;
+		
+		}
+		#footerd{
+			display: flex;
+		}
+
+		#gotop{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+			}
+		.footer-div{
+			width: 24%;
+			margin-left: 1%;
+		}	
+		.f-text{
+			color: #444444;
+		}
+		.footer-hr{
+			border: 0;
+			height: 1px;
+			background: #333;
+		}
+		.f-title{
+			color: white;
+		}
+		.contactus{
+			margin-top: 4px;
+			border: 0;
+			opacity: 0.05;
+			border-radius: 3px;
+			font-size: 15px;
+			width: 70%;
+			padding: 5px;
+			}
+		#f-submit{
+			border: 0;
+			background: #66ccff;
+			font-size: 16px;
+			border-radius: 5px;
+			color:white;
+		}
+		#f-cr{
+			margin-bottom: 0px;
+			color: #444444;
+		}
