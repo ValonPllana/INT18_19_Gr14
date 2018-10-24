@@ -4,11 +4,24 @@
 	background-color: #2aa2d4;
 display: flex;
 }
+#rreshti2{
+display:flex;
+}
 #social {
 	flex: 1;
 	text-align:left;
 
 	
+}
+
+#titull{
+	padding-top: 0;
+	margin-top: 0;
+	color: #252525;
+}
+#searchbar{
+width:20%;
+margin-left: 80%;
 }
 #plusi {
 	border-style: none;
@@ -23,7 +36,7 @@ display: flex;
 	width: 45px;
 }
 
-#login {
+.login {
 	flex: 1;
 	padding-right: 0.5%;
 	padding-top: 1.5%;
