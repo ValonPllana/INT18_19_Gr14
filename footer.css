@@ -4,7 +4,7 @@ body{
 		footer{
 			margin-bottom: 0px;
 			padding: 0px;	
-			background: black;
+			background: #1c1c1c;
 			min-width: 100%;
 		
 		}
@@ -16,6 +16,7 @@ body{
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			padding:10px 0px ;
 
 			}
 		.footer-div{
@@ -23,9 +24,10 @@ body{
 			margin-left: 1%;
 		}	
 		.f-text{
-			color: #444444;
+			color: #666666;
 		}
 		.footer-hr{
+			width: 98%;
 			border: 0;
 			height: 1px;
 			background: #333;
@@ -34,22 +36,26 @@ body{
 			color: white;
 		}
 		.contactus{
-			margin-top: 4px;
+			margin-top: 10px;
 			border: 0;
-			opacity: 0.05;
+			background-color: #232323;
 			border-radius: 3px;
 			font-size: 15px;
 			width: 70%;
 			padding: 5px;
+			color: #666666;
 			}
 		#f-submit{
 			border: 0;
-			background: #66ccff;
-			font-size: 16px;
+			background: #2aa2d4;
+			font-size: 15px;
 			border-radius: 5px;
 			color:white;
+			padding: 8px;
 		}
 		#f-cr{
 			margin-bottom: 0px;
 			color: #444444;
+			padding-left: 15px;
+			padding-bottom: 15px;
 		}
