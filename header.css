@@ -97,26 +97,24 @@ color:white;
 	margin-top: 20px;
 
 }
-#navmenu{
+#navmenu li{
 	color: white;
 	text-decoration-style: none;
-
+ border-left: 1px solid #404040;
+    padding: 10px 20px;
 
 }
-li {
- border-right: 1px solid #bbb;
-    padding: 2px;
-}
 
-li:last-child {
-    border-right: none;
-}
+
+
  nav a {
   
     font-family: times-new-roman;
     color: #999999;
     text-decoration: none;
+
 }
 nav a:hover {
 color:white;
-  }
+
+      }
