@@ -1,0 +1,28 @@
+               .row_RP
+		{
+			width: 100%;
+			display: table;
+			content: "";
+		}
+		.columnimg_RP
+		{
+
+			float: left;
+			width: 6%;
+			padding: 10px 5px;
+
+
+
+		}
+		.columntext_RP
+		{
+			float: left;
+			width: 15%;
+			padding-right: 15px;
+			
+		}
+		.float_imgRP
+		{
+        	width: 70px;
+        	height: 70px;
+		}
