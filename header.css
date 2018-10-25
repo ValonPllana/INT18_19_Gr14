@@ -106,7 +106,9 @@ color:white;
 }
 
 
-
+#navmenu li:last-child {
+    border-right:1px solid #404040;
+}
  nav a {
   
     font-family: times-new-roman;
