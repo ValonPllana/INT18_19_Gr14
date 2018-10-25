@@ -34,6 +34,7 @@ body{
 		}
 		.f-title{
 			color: white;
+
 		}
 		.contactus{
 			margin-top: 10px;
@@ -58,4 +59,8 @@ body{
 			color: #444444;
 			padding-left: 15px;
 			padding-bottom: 15px;
+		}
+		.f-left{
+			float: left;
+			padding-right: 5px;
 		}
