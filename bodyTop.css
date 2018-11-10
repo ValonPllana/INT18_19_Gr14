@@ -1,5 +1,6 @@
         .row_RP
 		{
+			margin: 7px;
 			width: 100%;
 			display: flex;
 		}
@@ -9,14 +10,11 @@
 			margin-left: 1%;
 			float: left;
 			width: 6%;
-			padding-top: 5px;
-
-
-
 		}
 		
 		.columntext_RP
 		{
+			
 			float: left;
 			width: 18%;
 			
