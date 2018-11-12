@@ -70,12 +70,12 @@ color:white;
 	border:0;
 	font-size: 15px;
 	padding: 10px;
-	color: #000000;
+	color: white;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
 	margin-right: -4px;
 	font-family:times-new-roman;
-
+text-decoration-color: white;
 
 }
 
