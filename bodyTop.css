@@ -1,21 +1,23 @@
         .row_RP
 		{
-			margin-top: 7px;
-			width: 100%;
-			display: flex;
+			margin: 5px;
+			width: 95%;
+			display: inline-flex;
+
+			
 		}
 		
 		.columnimg_RP
 		{
 			margin-left: 1%;
-			float: left;
-			width: 6%;
+		 	
+		 	width: 6%;
 		}
 		
 		.columntext_RP
 		{
 			
-			float: left;
+			
 			width: 18%;
 			
 			
@@ -23,11 +25,16 @@
 		
 		.float_imgRP
 		{
+        	
         	width: 80px;
         	height: 80px;
+
+
 		}
 		.page-width 
 		{
 			min-width: 1400px;
+
+
 		}
 		
