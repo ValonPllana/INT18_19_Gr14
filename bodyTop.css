@@ -1,6 +1,6 @@
         .row_RP
 		{
-			margin: 7px;
+			margin-top: 7px;
 			width: 100%;
 			display: flex;
 		}
@@ -16,7 +16,7 @@
 		{
 			
 			float: left;
-			width: 17%;
+			width: 18%;
 			
 			
 		}
@@ -30,3 +30,4 @@
 		{
 			min-width: 1400px;
 		}
+		
