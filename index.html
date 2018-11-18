@@ -5,8 +5,36 @@
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="stylesheet" type="text/css" href="bodyTop.css">
+<style type="text/css">
+	#tabela{
+		width: 100%
+	}
 
+	#tabela td{
+			vertical-align: top;
+			text-align: center;
+			width: 25%;
+		}
+	#tabela p{
+		    max-width: 350px;
+			text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+	}
+	
+	.MEET{
+		font-size: 3em;
+		margin-top: 0;
+		width: 350px;
 
+	}
+	#tabela h3{
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+</style>
 </head>
 <body>
 <header class="page-width">
@@ -39,89 +67,113 @@
 	<nav >
 		
 		<ul id="navmenu">
-				<li><a id="home" href="#">HOME</a> </li>
+				<li><a id="home" href="index.html">HOME</a> </li>
 				<li><a href="#">STYLE DEMO</a> </li>
 				<li><a href="#">FULL WIDTH</a> </li>
-				<li><a href="#">DROPDOWN</a> </li>
+				<li><a href="#">DROPDOWN
+
+					<div class="dropdown-content">
+    				<a href="#">Link 1</a>
+   					<a href="#">Link 2</a>
+    				<a href="#">Link 3</a>
+  					</div>
+
+				</a> </li>
 				<li><a href="#">PORTFOLIO</a></li>
 				<li><a href="#">GALLERY</a> </li>
-				<li><a href="#">LONG TEXT LINK</a></li>
+				<li><a href="staff.html">MEET OUR TEAM!</a></li>
 		</ul>
 	</nav>
 </div>
 </header>
 
-<img src="images/shwp.png" alt="nuk mund te shfaqet fotografia" height="60%" width="60%">
 
 <div class="row_RP page-width">
 		<div class="columnimg_RP">
 			<img src="images/Ch.jpg" alt="chicago" class="float_imgRP">
 		</div>
 		<div class="columntext_RP">
-				<a href="#">Link text</a></p>
+				<a href="#" style="text-decoration: none;">Link text</a></p>
 		<p> text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
 		</div>
 	<div class="columnimg_RP">
 		<img src="images/Ch.jpg" alt="chicago" class="float_imgRP"></div>
 		<div class="columntext_RP">
-			<a href="#">Link text</a></p>
+			<a href="#" style="text-decoration: none;">Link text</a>
 		<p > text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
 		</div>
 	<div class="columnimg_RP">
 		<img src="images/Ch.jpg" alt="chicago" class="float_imgRP">
 	</div>
 	<div class="columntext_RP">
-		<a href="#">Link text</a></p>
+		<a href="#" style="text-decoration: none;">Link text</a></p>
 		<p> text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
 	</div>
 	<div class="columnimg_RP">
 		<img src="images/Ch.jpg" alt="chicago" class="float_imgRP">
 	</div>
 	<div class="columntext_RP">
-		<a href="#">Link text</a></p>
+		<a href="#" style="text-decoration: none;">Link text</a></p>
 		<p> text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
 		
+	</div >
 	</div>
-	</div>
-<div  style="display: flex" style="width: 100%">
-<div  style="margin-left: 2%" style="width: 49%">
-<p>Welcome</p>
-<hr>
-<div  style="display: flex">
 
-   <div  style="padding : 2px" style="width:24%">
-    <img src="image/photo.jpg"  width="100%" height="125px">
-    <p style="max-width: 100%" ><big>text text text</big><br>text text text text text text text text text text text text text text text text<br> <a href="#">Read more &raquo;</a></p>
-  </div>
- 
- <div  style="margin-left: 1%" style="width:24%">
-   <img src="image/photo.jpg"  width="100%" height="125px">
-  <p style="max-width: 100%" ><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#">Read more &raquo;</a></p>
- </div>
- 
-</div>
-</div>
+	<table border="0" id="tabela">
+		<tr>
+			<td colspan="2">
+				<h3 >Welcome Message Here</h3>
+				<hr width="95%">
+			</td>
+			<td colspan="2">
+				<h3>Latest Project Work</h3>
+				<hr width="95%">
+			</td>
+		</tr>
+   
+   	<tr>
+   	  <td > <img src="image/photo.jpg"  width="350px" height="175px">
+        <p ><big>text text text</big><br>text text text text text text text text text text text text text text text text<br> <a href="#">Read more &raquo;</a></p>
+      </td>
+     
+       <td >
+       <img src="image/photo.jpg"  width="350px" height="175px">
+       <p  ><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#">Read more &raquo;</a></p>
+       </td>
+      
+       <td>
+       <img  src="image/photo.jpg" width="350px" height="175px">
+       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text</p>
+      </td>
 
-<div  style="margin-left: 2%" style="width :49%">
-<p>Latest post</p>
-<hr>
-<div   style="display: flex">
+      <td>
+     
+        <img src="image/photo.jpg" width="350px" height="175px">
+      <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text text</p>
+      </td>
+  </tr>
+  	<tr>
+   	  <td>
+   	  	<p class="MEET">MEET OUR TEAM</p>
+   	  </td>
+     
+       <td >
+       <img src="image/photo.jpg"  width="350px" height="175px">
+       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#"></a></p>
+       </td>
+      
+       <td>
+       <img  src="image/photo.jpg" width="350px" height="175px">
+       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text</p>
+      </td>
 
-   <div style="padding: 2px" style="width:24%">
-    <img src="image/photo.jpg" width="100%" height="125px">
-    <p style="max-width: 100%" ><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text</p>
-  </div>
-
- <div style="margin-left: 1%" style="width:24%">
-   <img src="image/photo.jpg" width="100%" height="125px">
-  <p style="max-width: 100%"><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text text</p>
- </div>
-
-</div>
-</div>
-</div>
-
-
+      <td>
+     
+        <img src="image/photo.jpg" width="350px" height="175px">
+      <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text text</p>
+      </td>
+  </tr>
+</table>
 <footer class="page-width">
 		<a href="#top"><img src="images/gotop.png" alt="Gotop" id="gotop""></a>
 		<hr class="footer-hr">
