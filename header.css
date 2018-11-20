@@ -120,3 +120,13 @@ nav a:hover {
 color:white;
 
       }
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
