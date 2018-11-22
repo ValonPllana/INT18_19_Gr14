@@ -1,40 +1,46 @@
-        .row_RP
-		{
-			margin: 5px;
-			width: 95%;
-			display: inline-flex;
-
-
-		}
-		
-		.columnimg_RP
-		{
-			margin-left: 1%;
-		 	
-		 	width: 6%;
-		}
-		
-		.columntext_RP
+        .pagewidth
 		{
 			
-			
-			width: 18%;
-			
-			
-		}
-		
-		.float_imgRP
-		{
-        	
-        	width: 80px;
-        	height: 80px;
-
+		min-width: 1400px;
 
 		}
-		.page-width 
-		{
-			min-width: 1400px;
 
+		#imgsize
+		{
+	
+		height: 60px;
+		width: 60px;
+	
+		}
+
+		#image
+		{
+	
+		width: 60px;
+		padding-bottom: 30px;
+		float: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 10px;
+		padding-left: 13px;
+		}	
+
+		#text
+		{
+	
+		padding-right: 10px;
+		padding-left: 2px;
+		margin-left: auto;
+		margin-right: auto;
+		width:290px;
+
+		}
+
+		#linkdec
+		{
+	
+		text-decoration: none;
+		color: blue;
 
 		}
 		
@@ -53,8 +59,8 @@
 		{
 		    overflow: hidden;
 		    height: 500px;
-		    margin-right: 2%;
-		    margin-left: 2%;
+		    margin-right: 1%;
+		    margin-left: 1%;
 		    margin-bottom: 1%;
 		}
 
@@ -116,7 +122,7 @@
 		    }
 		     100%
 		     {
-		        left: -400%;
+		        left: 0%;
 		    }
 		  
 
