@@ -161,6 +161,7 @@
 	{
 
     max-width: 1500px;
+    height: 600px;
   	position: relative;
   	margin: auto;
 	}
@@ -235,22 +236,22 @@
 	{
 	position:absolute;
 	margin-top:-22px;
-	margin-left:7px;
+	margin-left:18px;
 
 	}	
 
 	.active, .dot:hover 
 	{
-  	background-color: grey;
+  	background-color: #1078E3;
 	}
 
 /* animacioni fade */
 	.fade 
 	{
   	-webkit-animation-name: fade;
-  	-webkit-animation-duration: 1.5s;
+  	-webkit-animation-duration: 3s;
   	animation-name: fade;
- 	animation-duration: 2s;
+ 	animation-duration: 3s;
 	}
 
 	@-webkit-keyframes fade 
