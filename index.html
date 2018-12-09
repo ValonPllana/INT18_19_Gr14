@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Euonymus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="stylesheet" type="text/css" href="bodyTop.css">
+
 <style type="text/css">
 	#tabela{
 		width: 100%
@@ -36,7 +38,7 @@
 	}
 </style>
 </head>
-<body>
+<body class="page-width">
 <header class="page-width">
   <div id="e-kalterta">
   <div id="social">
@@ -68,7 +70,7 @@
 		
 		<ul id="navmenu">
 				<li><a id="home" href="index.html">HOME</a> </li>
-				<li><a href="#">STYLE DEMO</a> </li>
+				<li><a href="shop.html">SHOP</a> </li>
 				<li><a href="#">FULL WIDTH</a> </li>
 				<li><a href="#"><span class="dropdown">DROPDOWN</span>
 
@@ -84,51 +86,88 @@
 				<li><a href="#MEET">MEET OUR TEAM!</a></li>
 		</ul>
 	</nav>
+</div style="background-color: #2a2a2a; ">
+
+<div>
+	
 </div>
 </header>
-<div class="slider page-width">
-		<figure>
-		<div class="textOverImg">
-			<div class="paragraph" style="width: 40%;">
-			<p>SLIDE ONE!</p>
-			<p>slide one slide one slide one slide one slide one slide one slide one slide one slide one slide oneslide one slide one slide one slide oneslide one slide one slide one slide oneslide one slide one</p>
-			</div>
-			<img src="images/slide1.jpg">
-		</div>
+<div class="slideformat" style="font-family: Verdana, sans-serif;">
 
-			<div class="textOverImg">
-				<div class="paragraph" style="width:40%">
-					<p>SLIDE TWO!</p>
-			<p>slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two slide two</p>
-				</div>
-			<img src="images/slide2.jpg">
-		</div>
-			<div class="textOverImg">
-				<div class="paragraph" style="width:40%">
-					<p>SLIDE THREE!</p>
-			<p>slide three slide three slide three slide three slide three slide three slide three slide three slide three slide three slide three slide slide three slide three slide three slide three slide three </p>
-				</div>
-			<img src="images/slide3.jpg">
-		</div>
-		
-			<div class="textOverImg">
-				<div class="paragraph" style="width:40%">
-					<p>SLIDE FOUR!</p>
-			<p>slide four slide four slide four slide four slide four slide four slide four slide four slide four slide four slide four slide four slide four slide four slide slide four slide four slide four</p>
-				</div>
-			<img src="images/slide4.jpg">
-		</div>
-			<div class="textOverImg">
-				<div class="paragraph" style="width:40%">
-					<p>SLIDE FIVE!</p>
-			<p>slide five slide five slide five slide five slide five slide five slide five slide slide five slide five slide five slide five slide five slide five slide five slide FIVE slide five slide five slide</p>
-				</div>
-			<img src="images/slide5.jpg">
-		</div>
-		</figure>
-		
-	</div>
+<div class="mySlides fade">
+  
+  <img src="images/111.jpg" style="width:100%" id="img">
+  <div class="text"><p class="textcaption">Caption Text</p>
+  <p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/222.jpg" style="width:100%" id="img">
+  <div class="text"><p class="textcaption">Caption Text</p>
+  <p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/333.png" style="width:100%" id="img">
+  <div class="text"><p class="textcaption">Caption Text</p>
+  <p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  
+    <img src="images/444.png" style="width:100%" id="img">
+  <div class="text"><p class="textcaption">Caption Text</p>
+  <p>text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+</div>
+<div style="text-align:center" class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+
 </br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+   dots[slideIndex-1].className += " active";
+}
+</script>
 
 <table style="width: 100% " border="0">
 	<tr>
@@ -210,18 +249,18 @@
      
        <td >
        <img src="image/photo.jpg"  width="350px" height="175px">
-       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#"></a></p>
+         <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#"></a></p>
        </td>
       
        <td>
        <img  src="image/photo.jpg" width="350px" height="175px">
-       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text</p>
+       <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#"></a></p>
       </td>
 
       <td>
      
         <img src="image/photo.jpg" width="350px" height="175px">
-      <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text text text text text</p>
+        <p><big>text text text</big><br>text text text text text text text text text text text text text text text text text<br><a href="#"></a></p>
       </td>
   </tr>
 </table>
