@@ -104,22 +104,33 @@
 
 		 .two{
 		 	display: flex;
-		 	width: 100%;
-		 	margin-right: 1%;
-		    margin-left: 1%;
-		    margin-bottom: 1%;
+		 	width: 98%;
+		 	min-width: 800px;
 		 }
 		 .shop-tables{
-		 	width: 100%;
+		 	width: 98%;
+		 	border-collapse: collapse;
 		 }
 		 .shop-tables tr th,td{
 		 	text-align: left;
-		 	width: 50%;
-		 }
+		 	width: 48%;
+		 	border-bottom: 1px solid black;
+ 		 }
 		 .imgtitle{
 		 	display: flex;
 		 }
-
+		 .half{
+		 	width: 50%;
+		 	position: center;
+		 	margin-left: 2%;
+		 }
+		 .imgtitle h2{
+		 	padding-top:3%;
+		 	margin-left: 2%;
+		 }
+		 .shop-tables th{
+		 	background-color: lightgrey;
+		 }
 	</style>
 </head>
 <body>
@@ -147,32 +158,68 @@
 		</div>
 	</div>
 	<div class="two">
-		<div style="width: 50%">
+		<div class="half">
 			<div class="imgtitle">
-				<img src="#" height="30%" width="30%">
-				<h3>pcname</h3>
+				<img src="images/shop/rog.jpg" height="30%" width="30%">
+				<h2>Asus ROG Strix</h2>
 			</div>
-			<table class="shop-tables" border="1 solid 2px">
+			<table class="shop-tables" border="1">
 				<tr>
 					<th>
 						Processor:
 					</th>
 					<td>i7 gen8</td>
 				</tr>
+				<tr>
+					<th>
+						Graphic card:
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>
+						Display:
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>
+						Hdd/Sdd:
+					</th>
+					<td></td>
+				</tr>
 				
 			</table>
 		</div>
-		<div style="width: 50%">
+		<div class="half">
 			<div class="imgtitle">
-				<img src="#" height="30%" width="30%">
-				<h3>pcname</h3>
+				<img src="images/shop/pretador.jpg" height="30%" width="30%">
+				<h2>Acer Predator Helios 300</h2>
 			</div>
-			<table class="shop-tables" border="1 solid 2px">
-				<tr>
+			<table class="shop-tables" border="1">
+					<tr>
 					<th>
 						Processor:
 					</th>
 					<td>i7 gen8</td>
+				</tr>
+				<tr>
+					<th>
+						Graphic card:
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>
+						Display:
+					</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>
+						Hdd/Sdd:
+					</th>
+					<td></td>
 				</tr>
 				
 			</table>
