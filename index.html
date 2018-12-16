@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="stylesheet" type="text/css" href="bodyTop.css">
-
 <style type="text/css">
 	#tabela{
 		width: 100%
@@ -141,32 +140,7 @@
 
 </br>
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-   dots[slideIndex-1].className += " active";
-}
 </script>
 
 <table style="width: 100% " border="0">
@@ -176,7 +150,7 @@ function showSlides(n) {
 		</td>
 		
 				<td id="text">
-					<a href="#" id="linkdec">Link text</a></p>
+					<a href="iPhonexs.html" id="linkdec">Link text</a></p>
 					<p> text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
 				</td>
 
@@ -315,4 +289,6 @@ function showSlides(n) {
 		<p id="f-cr"><em>Copyright &copy; 2013 Domain Name - All rights reserved</em></p>
 	</footer>
 </body>
+<script type="text/javascript" src="scripts.js"></script>
+
 </html>
