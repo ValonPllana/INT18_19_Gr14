@@ -8,11 +8,12 @@
 			margin: 0;
 			border:0;
 			background-color: lightblue;
+		 	background-image: url("images/shop/backgroundimg.jpg");
 			}
 		.text{
 			z-index: 1;
 			font-size: 3em;
-			 	position: absolute;
+		 	position: absolute;
 			width:25%;
 			color:white;
 			padding-top: 25px;
@@ -28,27 +29,11 @@
 			padding-top: 100px;
 			padding-left: 25px;
 			}
-		.button{
-			z-index: 1;
-			font-size: 2em;
-			position: absolute;
-			width: 30px;
-			padding-top: 210px;
-			padding-left: 25px;
-		}
-		.button a{
-
-			background:none;
-			text-decoration: none;
-			font-size: 26px;
-			font-weight: 800;
-			color: black; 		
-		}
-
+		
 		.main-menu
 		{
 		    overflow: hidden;
-		    height: 700px;
+		    height: 500px;
 		    margin-right: 1%;
 		    margin-left: 1%;
 		    margin-bottom: 1%;
@@ -61,7 +46,8 @@
 			float: left;
 		}
 		#div1 img
-		{
+		{	
+			margin-top: -200px;
 		    width:100%;
 		    float: left;
 		}
@@ -125,6 +111,7 @@
 		 	width: 50%;
 		 	position: center;
 		 	margin-left: 2%;
+		 	background-color: rgba(0,0,0,0.1);
 		 }
 		 .imgtitle h2{
 		 	padding-top:3%;
@@ -132,6 +119,26 @@
 		 }
 		 .shop-tables th{
 		 	background-color: lightgrey;
+		 }
+		 .buyit{
+		 	width:100%;
+		 	display: flex;
+		 }
+		 .buyit div{
+		 	width: 50%;
+		 	font-size: 1.3em;
+		 }
+		 .buyit button{
+		 	font-size: 1.5em;
+			width: 50%;
+			margin-top: 16px;
+			border:none;
+			background-color: lightgrey;
+			color:white;
+			min-width: 150px;
+		 }
+		 .buyit button:hover{
+		 	cursor: pointer;
 		 }
 	</style>
 </head>
@@ -142,24 +149,20 @@
 				<img src="images/shop/mac.jpg">
 				<p class="text">Macbook Air</p>
 				<p class="under-text">APPLE MREC2D/A MacBook Air, Notebook, Core™ i5 Processor,<br> 8 GB RAM, 256 GB SSD, Intel® UHD Graphics 617, Silver</p>
-				<div class="button"><a href="#">View more</a></div>
 			</div>
 			<div>
 				<img src="images/shop/iphone.jpg">
 				<p class="text">Iphone X</p>
 				<p class="under-text">APPLE iPhone X 64GB Silver</p>
-				<div class="button"><a href="#">View more</a></div>
 			</div>
 			<div>
 				<img src="images/shop/canon.jpg">
 				<p class="text">Canon EOS</p>
 				<p class="under-text">EOS 6D Mark II EF 24-105mm f/4L IS II USM Kit</p>
-				<div class="button"><a href="#">View more</a></div>
 			</div>
 		
 		</div>
 	</div>
-	<div class="bimage">
 	<div class="two">
 		<div class="half">
 			<div class="imgtitle">
@@ -193,6 +196,14 @@
 				</tr>
 				
 			</table>
+			<div class="buyit">
+				<div>
+					<h3>Price: 1500$</h3>
+				</div>
+				<div>
+					<button>Buy Now</button>
+				</div>
+			</div>
 		</div>
 		<div class="half">
 			<div class="imgtitle">
@@ -226,6 +237,14 @@
 				</tr>
 				
 			</table>
+			<div class="buyit">
+				<div>
+					<h3>Price: 1700$</h3>
+				</div>
+				<div>
+					<button>Buy Now</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="two" style="margin-top: 10px;">
@@ -261,6 +280,14 @@
 				</tr>
 				
 			</table>
+			<div class="buyit">
+				<div>
+					<h3>Price: 1100$</h3>
+				</div>
+				<div>
+					<button>Buy Now</button>
+				</div>
+			</div>
 		</div>
 		<div class="half">
 			<div class="imgtitle">
@@ -294,8 +321,15 @@
 				</tr>
 				
 			</table>
+			<div class="buyit">
+				<div>
+					<h3>Price: 850$</h3>
+				</div>
+				<div>
+					<button>Buy Now</button>
+				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 </body>
 </html>
