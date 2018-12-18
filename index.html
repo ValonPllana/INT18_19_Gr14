@@ -3,6 +3,7 @@
 <head>
 	<title>Euonymus</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="funksionetPerDD.js"></script>
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
   <link rel="stylesheet" type="text/css" href="bodyTop.css">
@@ -71,14 +72,14 @@
 				<li><a id="home" href="index.html">HOME</a> </li>
 				<li><a href="shop.html">SHOP</a> </li>
 				<li><a href="#">FULL WIDTH</a> </li>
-				<li><a href="#"><span class="dropdown">DROPDOWN</span>
+				<li><div class="dropdwn"><span onclick="myFunction()" class="dropdown">DROPDOWN</span>
 
-					<div class="dropdown-content">
+					<div id="myDropdown" class="dropdown-content">
     				<a href="#">Link 1</a>
    					<a href="#">Link 2</a>
     				<a href="#">Link 3</a>
   					</div>
-
+				</div>
 				</a> </li>
 				<li><a href="#">PORTFOLIO</a></li>
 				<li><a href="#">GALLERY</a> </li>
@@ -143,7 +144,7 @@
 
 </script>
 
-<table style="width: 100% " border="0">
+<table style="width: 100%; " border="0">
 	<tr>
 		<td id="image" id="text">
 			<img src="images/Ch.jpg" alt="chicago" id="imgsize">
