@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		
-	</title>
-     <style >
-     	
+	
+		<style>
+		body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#sllajder {
+    display: block;
+    height: 700px;
+    width: 110%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+    position: relative;
+}
+
+#sllajder #slides {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#sllajder #slides > div {
+    list-style: none;
+    height: 100%;
+    width: 500%;
+    position: relative;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 600px;  
+    -webkit-perspective-origin: 10% 50%;  
+    
+}
+
+#slides > div > span {
+	-webkit-transition: all 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+	height: 320px;
+	width: 10%;
+	float: left;
+	border-radius: 5px;
+	opacity: 1;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	font-size: 1.6em;
+	top: 20px;
+	z-index: 1;
+}
+
+#sllajder input[type=radio] {
+	display: none;
+}
+
+#sllajder #slides > div > span > img {
+    margin: auto;
+    height: 100%;
+}
+
+
+#sllajder .arrows {
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    top: 290px;
+    display: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    width: 29px;
+	height: 25px;
+	border-radius: 32px;
+	text-align: center;
+	padding: 7px 0 0 3px;
+    background: black;
+    box-shadow: 0 0 20px rgba(200, 235, 248, 0.98), inset 0px 11px 24px -8px rgba(255,255,255,0.4);
+}
+
+#sllajder .arrows:hover {
+	box-shadow: 0 0 20px rgba(200, 235, 248, 0.98), inset 0px -11px 24px -8px rgba(255,255,255,0.4);	
+}
+
+
+
+#butoni1:checked ~ #arrow2, #butoni2:checked ~ #arrow3, #butoni3:checked ~ #arrow4, #butoni4:checked ~ #arrow5 {
+    right: 27%;
+    display: block;
+}
+
+#butoni2:checked ~ #arrow1, #butoni3:checked ~ #arrow2, #butoni4:checked ~ #arrow3, #butoni5:checked ~ #arrow4 {
+	left: 27%;
+    display: block;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    box-shadow: 0 0 20px rgba(200, 235, 248, 0.98), inset 0px -11px 24px -8px rgba(255,255,255,0.4);
+}
+
+#butoni2:checked ~ #arrow1:hover, #butoni3:checked ~ #arrow2:hover, #butoni4:checked ~ #arrow3:hover, #butoni5:checked ~ #arrow4:hover {
+    box-shadow: 0 0 20px rgba(200, 235, 248, 0.98), inset 0px 11px 24px -8px rgba(255,255,255,0.4);
+}
+
+#image1 {
+	background: url('images/foto2.jpg');
+}
+
+#image2 {
+	background: url('images/foto1.jpg');
+}
+
+#image3 {
+	background: url('images/foto4.jpg');
+}
+
+#image4 {
+	background: url('images/foto5.jpg');
+}
+
+#image5 {
+	background: url('images/foto6.jpg');
+}
+
+
+#sllajder #butoni1:checked ~#slides > div #image2, #sllajder #butoni1:checked ~ #slides > div #image3, 
+#sllajder #butoni1:checked~ #slides > div #image4,#sllajder #butoni1:checked ~ #slides > div #image5,
+#sllajder #butoni2:checked~#slides > div #image3,#sllajder #butoni2:checked ~ #slides > div #image4, 
+#sllajder #butoni2:checked~#slides > div #image5 ,#sllajder #butoni3:checked ~ #slides > div #image4,
+#sllajder #butoni3:checked ~#slides > div #image5,#sllajder #butoni4:checked ~ #slides > div #image5 {
+	-webkit-transform: rotateY(-10deg) scale(0.8) translateX(-10%);
+	z-index: 0;
+}
+
+#sllajder #butoni2:checked ~ #slides > div #image1, #sllajder #butoni3:checked ~ #slides > div #image2,
+#sllajder #butoni3:checked ~ #slides > div #image1, #sllajder #butoni4:checked ~ #slides > div #image3, 
+#sllajder #butoni4:checked ~ #slides > div #image2, #sllajder #butoni4:checked ~ #slides > div #image1, 
+#sllajder #butoni5:checked ~ #slides > div #image4, #sllajder #butoni5:checked ~ #slides > div #image3,
+#sllajder #butoni5:checked ~ #slides > div #image2, #sllajder #butoni5:checked ~ #slides > div #image1 {
+	-webkit-transform: rotateY(10deg) scale(0.8) translateX(10%);
+	z-index: 0;
+}
+
+
+#sllajder #butoni1:checked ~ #slides > div > span {left: 5% }
+#sllajder #butoni2:checked ~ #slides > div > span {left: -5% }
+#sllajder #butoni3:checked ~ #slides > div > span {left: -15% }
+#sllajder #butoni4:checked ~ #slides > div > span {left: -25% }
+#sllajder #butoni5:checked ~ #slides > div > span {left: -35% }
+
+</style>
+
+       	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
@@ -109,14 +259,6 @@
 		</div>
 	</div>
 </div>    
-
-
-
-
-
-
-
-
 
 
 
