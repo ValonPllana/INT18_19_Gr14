@@ -315,3 +315,16 @@
 			margin-top: 90px;
 			margin: 10%
 		}
+
+		.imgtrans{
+			width: 200px;
+			height: 200px;
+			-webkit-transition:transform 2s;
+			-webkit-transition-timing-function: ease-in-out;
+			transition-timing-function: ease-in-out;
+		}
+
+		.imgtrans:hover
+		{
+			transform: translate(1300px,0px) rotate(360deg) rotateX(360deg);
+		}
