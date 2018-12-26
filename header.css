@@ -52,6 +52,7 @@ display:flex;
 }
 
 #titull{
+	background-color: white;
 	margin-left: 3%;
 	font-weight: normal;
 	padding-top: 0;

@@ -1,0 +1,53 @@
+.column {	
+  float: left;
+  width: 25%;
+  padding: 3%;
+  }
+
+ .row{
+   margin-left: 8%;
+   display: table;
+  clear: both;
+}		
+		
+.container {
+
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightblue;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  -webkit-transform: scale(0);
+  -webkit-transition: 0.4s ease; 
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+   text-align: center;
+}
+.background-color{
+	background-color: rgba(150,0,0,0.1);
+}
