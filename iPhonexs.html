@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bodyTop.css">
 	<style type="text/css">
-
+		html{
+			scroll-behavior: smooth;
+		}
 			body {
 			background-color: #000;
 			font-family: Verdana, sans-serif;
 			margin:0;
-			min-width: 1500px;
+			max-width: 100%;
+			overflow-x: hidden;
 		}
 		p {
 			color: white;
@@ -21,11 +24,11 @@
 </head>
 <body>
 <ul class="ul" style="display: block;">
-	<li><a href="html1.html" id="li-logo" class="li-a active">IPHONE XS</a></li>
+	<li><a href="iphonexs.html" id="li-logo" class="li-a active">IPHONE XS</a></li>
 	<li><a class="li li-a" href="#">Cameras</a></li>
 	<li><a class="li li-a" href="#">A12 Bionic</a></li>
-	<li><a class="li li-a" href="#">Face ID</a></li>
-	<li><a class="li li-a" href="#">Display</a></li>
+	<li><a class="li li-a" href="#faceid">Face ID</a></li>
+	<li><a class="li li-a" href="#display">Display</a></li>
 </ul>
 
 	<img src="images/3.png" style="max-width:100%;margin-bottom: 50px; margin-top: 100px;">
@@ -34,6 +37,7 @@
 </div>
 </br>
 </br>
+<div id="display" style="height: 40px;"></div>
 	<div class="ptwo">
 	<p>Super Retina</p>
 	<p>The beauty of OLED.</p>
@@ -118,6 +122,7 @@
 </div>
 </br>
 </br>
+<div id="faceid" style="height: 40px;"></div>
 <div class="ptwo" style="position: relative;left:20%;text-align: left;">
 	<p>Face ID</p>
 	<p>Your face is your password </p>
