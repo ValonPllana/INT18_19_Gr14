@@ -38,6 +38,16 @@
 		text-align: left;
 	}
 </style>
+	<script src="http://ajax.googleapis.com/ajax"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script >
+		$(document).ready(function(){
+			$("#plusi").click(function(){
+				$("#e-kalterta").slideToggle("slow");
+				
+			});
+		});
+	</script>
 </head>
 <body class="page-width">
 <header class="page-width">
@@ -54,7 +64,7 @@
 </div>
   	<div class ="login"><a class ="login" href="#">Sign up</a> | <a class ="login" href="login.html">Login</a> | <a class ="login" href="#">RSS Feeds</a> | <a  class ="login" href="#"> Archived News</a></div>
 </div>
-<button id="plusi"><a class="login" href="#">+</a></button>
+<button id="plusi">+</button>
 
 <div id="rreshti2">
 	<h1 id="titull"><big><big>E</big></big>UONYMUS</h1>	
