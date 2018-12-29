@@ -7,6 +7,13 @@
   body{
     margin: 0;
   }
+  .titujt{
+    font-size: 30px;
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  #text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9,#text10{
+    display: none;
+      }
 	.paragrafi10{
 			width:1000px;
 			margin-left: 200px;
@@ -75,12 +82,58 @@
   
 </div>
 </header>
+<script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".a").click(function(){
+        $("#text1").slideToggle("slow");
+        $(".a").text(h3);
+      });
+      $(".b").click(function(){
+        $("#text2").slideToggle("slow");
+        $(".b").text(h3);
+      });
+      $(".c").click(function(){
+        $("#text3").slideToggle("slow");
+        $(".c").text(h3);
+      });
+      $(".d").click(function(){
+        $("#text4").slideToggle("slow");
+        $(".d").text(h3);
+      });
+      $(".e").click(function(){
+        $("#text5").slideToggle("slow");
+        $(".e").text(h3);
+      });
+      $(".f").click(function(){
+        $("#text6").slideToggle("slow");
+        $(".f").text(h3);
+      });
+      $(".g").click(function(){
+        $("#text7").slideToggle("slow");
+        $(".g").text(h3);
+      });
+      $(".h").click(function(){
+        $("#text8").slideToggle("slow");
+        $(".h").text(h3);
+      });
+      $(".i").click(function(){
+        $("#text9").slideToggle("slow");
+        $(".i").text(h3);
+      });
+      $(".j").click(function(){
+        $("#text10").slideToggle("slow");
+        $(".j").text(h3);
+      });
+    });
+  </script>
 	<div class="paragrafi10">
     	<p id="titulli">The 10 best smartphones of 2018</titulli>
     	<p>All significant smartphone launches have now passed and as we approach the end of the year, the ten best shake out after more extended usage of each. All ten phones are excellent and certain aspects make each a possible contender for the top spot.</p>
     	<div class="paragrafi20">
-    		<h3> 1.SAMSUNG GALAXY NOTE 9</h3>
-    		<img src="images/008.jpg" alt="smg-note9" width="650px">
+    		<div class="a"><h3 class="titujt">1.SAMSUNG GALAXY NOTE 9</h3></div>
+    		<div id="text1">
+        <img src="images/008.jpg" alt="smg-note9" width="650px">
     		<p>The Galaxy Note 9 is the best phone for business and continues to be my favorite phone of 2018.
     		 I've been using one now for several months and despite trying out some great new phones like
     		 the iPhone XS Max and Google Pixel 3 XL, none of these can replace the Note 9 and everything 
@@ -90,9 +143,11 @@
              <p>The Galaxy Note 9 improves upon the Note 8 with a Bluetooth S Pen, more internal capacity and RAM,             
              a massive 4,000 mAh battery, better dual rear cameras with some software intelligence,
              enhanced audio capability, and new placement of the rear fingerprint scanner.</p>
-
+            </div>
              
-             <h3>2. HUAWEI MATE 20 PRO</h3>
+             
+             <div class="b"><h3 class="titujt">2.HUAWEI MATE 20 PRO</h3></div>
+             <div id="text2">
              <img src="images/009.jpg" alt="huawei" width="650px">
              <p>Huawei recently announced the Mate 20 Pro and it brings together all of the greatness of Huawei 
              into a single device that is tough to beat. The Mate 20 Pro includes the first Android 7nm process 
@@ -104,10 +159,11 @@
     	       The three rear cameras have 40MP, 20MP, and 8MP resolution with a 24MP front-facing shooter 
     	       and artificial intelligence to help you capture great shots.
     	       The monochrome lens has been replaced with a wide-angle lens so that you now have telephoto,
-    	        wide-angle, and standard camera functionality.</p>
+    	        wide-angle, and standard camera functionality.</p></div>
 
     	        
-    	        <h3>3. GOOGLE PIXEL 3 XL AND PIXEL 3</h3>
+    	        <div class="c"><h3 class="titujt">3.GOOGLE PIXEL 3 XL AND PIXEL 3 </p></h3></div>
+              <div id="text3">
     	        <img src="images/010.jpg" alt="googlepx" width="650px">
     	        <p>While the Galaxy Note 9 offers just about everything you want, software updates are not its specialty.
     	         If you want an Android phone that will always have the latest firmware and security updates, 
@@ -120,9 +176,11 @@
     	            The smaller Pixel 3 has a 5.5 inch display and smaller 2,915 mAh battery while the 
     	           rest of the specs are the same as the XL model. Thankfully, wireless charging is included this year,
     	           along with a set of wired Pixel Buds in the retail package.</p>
-
+                 </div>
     	           
-    	           <h3>4. APPLE IPHONE XS MAX/XS</h3>
+
+    	           <div class="d"><h3 class="titujt">4.APPLE IPHONE XS MAX/XS</h3></div>
+                 <div id="text4">
     	           <img src="images/011.jpg" alt="applexs" width="650px" >
     	           <p>Apple pushed the entry-level price of a flagship up to $1,000 last year with the iPhone X 
     	           and raised the bar again this year with the most expensive flagship available in the iPhone XS Max. 
@@ -133,9 +191,10 @@
     	           but after two weeks I sent it back as I found the small size of the iPhone X was one of the primary 
     	           reasons it still earned a place in my pocket.</p>
     	           <p>The Apple iPhone XS Max has been shown to best all other phones in benchmarking testing and the Apple A12 Bionic chipset certainly blazes new trails. It has a fabulous OLED screen, good sized battery, and new camera software to make it a very compelling flagship.</p>
+                  </div>
 
-
-                   <h3>5. ONEPLUS 6T</h3>
+                   <div class="e"><h3 class="titujt">5.ONEPLUS 6T</h3></div>
+                   <div id="text5">
                    <img src="images/012.jpg" alt="oneplus" width="650px">
                    <p>OnePlus launched the new OnePlus 6T at the end of October and for the first time ever it
                     launched on a US wireless carrier. I picked up my Mirror Black model at a local T-Mobile store,
@@ -148,9 +207,11 @@
                     with prices ranging from $549 to $629. The lowest cost one still has 6GB of RAM and
                      128GB of storage while the $629 model has 8GB of RAM and 256GB of internal storage. 
                     You will not find another phone with these great specs for these prices.</p>
+                     </div>
 
 
-                    <h3>6.HUAWEI P20 PRO</h3>
+                     <div class="f"><h3 class="titujt">6.HUAWEI P20 PRO</h3></div>
+                     <div id="text6">
                     <img src="images/013.jpg" alt="huaweip20" width="650px">
                     <p>While US consumers will have to resort to eBay to pick one up, the Huawei P20 Pro 
                     remains one of the most exciting phones of 2018, even with its new cousin just launching
@@ -164,9 +225,11 @@
                      Pro is no exception with 4,000 mAh that is sure to get you through at least one full,
                       busy day. It has a large 6.1 inch OLED with a notch you can show or hide, a powerful
                        Kirin 970 processor with integrated AI, IP67 dust and water resistance, and more.</p>
+                      </div>
 
 
-                     <h3>7. APPLE IPHONE XR</h3>
+                     <div class="g"><h3 class="titujt">7.APPLE IPHONE XR</h3></div>
+                     <div id="text7">
                      <img src="images/014.jpg" alt="iphonexr" width="650px">
                      <p>This year Apple announced three new phones with one releasing a month after the other two.
                       I traded in the iPhone XS Max for an iPhone XR and overall I am quite happy with the device
@@ -184,9 +247,11 @@
                        The battery life of the iPhone XR is awesome and the camera does a great job. 
                        For many people, it is likely one of the best iPhones you can buy today and is more reasonably priced 
                        than the new XS and XS Max.</p> 
+                     </div>
 
 
-                       <h3>8. LG V40 THINQ</h3>
+                       <div class="h"><h3 class="titujt">8.LG V40 THINQ</h3></div>
+                       <div id="text8">
                        <img src="images/015.jpg" alt="lgv40" width="650px">
                        <p>LG continues to release great phones that appreciate over time and in a crowded flagship market,
                         the LG V40 may have a tough time finding its place as well.</p>
@@ -208,9 +273,12 @@
                         a screen that extends nearly the full front with a notch, and incredible audio support
                         with its Boombox speaker system. The 3,300 mAh battery will not get you as far as the
                         top five phones in this list and is one area that keeps me from using it daily over the long term.</p>
+                      </div>
 
 
-                        <h3>9. SONY XPERIA XZ3</h3>
+
+                        <div class="i"><h3 class="titujt">9.SONY XPERIA XZ3</h3></div>
+                        <div id="text9"
                         <img src="images/016.jpg" alt="sonyxperia" width="650px">
                         <p>Sony is back on the 10 best list with its best smartphone in years in the form of the Xperia XZ3. 
                         I've been using one for a few weeks and even though I am not happy with the fingerprint scanner
@@ -223,9 +291,12 @@
                         <p>The Xperia XZ3 has a gorgeous curved design with lovely color options and microSD storage expansion options.
                         The 6-inch OLED screen looks great, especially when viewing video content and experiencing 
                         the HDR up-conversion technology</p>
+                        </div>
 
 
-                        <h3>10. SAMSUNG GALAXY S9/S9 PLUS</h3>
+
+                        <div class="j"><h3 class="titujt">10.SAMSUNG GALAXY S9/S9 PLUS</h3></div>
+                        <div id="text10">
                         <img src="images/017.jpg" alt="smgs9" width="650px">
                         <p>Samsung launched the Galaxy S9 and S9 Plus earlier this year.
                          It's an evolution in the Galaxy S line, but one that leads as close to perfection as 
@@ -240,10 +311,7 @@
                          water resistance, a USB Type-C standard port, and traditional 3.5mm headset jack. 
                          It also launches with Android 8.0 Oreo. There is nothing missing from the Galaxy S9 
                          Plus and it still deserves respect several months later</p>
-
-
-
-
+        </div>
     	</div>
     </div>
     <footer class="page-width">
