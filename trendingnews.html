@@ -29,6 +29,17 @@
 	</style>
 </head>
 <body>
+  
+<script src="jquery-3.3.1.min.js"></script>
+  <script >
+    $(document).ready(function(){
+      $("#plusi").click(function(){
+        $("#e-kalterta").slideToggle("slow");
+        
+      });
+    });
+  </script>
+  <script src="funksionetPerDD.js"></script>
   <header class="page-width">
   <div id="e-kalterta">
   <div id="social">
@@ -43,7 +54,7 @@
 </div>
     <div class ="login"><a class ="login" href="#">Sign up</a> | <a class ="login" href="login.html">Login</a> | <a class ="login" href="#">RSS Feeds</a> | <a  class ="login" href="#"> Archived News</a></div>
 </div>
-<button id="plusi"><a class="login" href="#">+</a></button>
+<button id="plusi">+</button>
 
 <div id="rreshti2">
   <h1 id="titull"><big><big>E</big></big>UONYMUS</h1> 
@@ -62,18 +73,18 @@
         <li><a id="home" href="index.html">HOME</a> </li>
         <li><a href="shop.html">SHOP</a> </li>
         <li><a href="#">FULL WIDTH</a> </li>
-        <li><div class="dropdwn"><span onclick="myFunction()" class="dropdown">DROPDOWN</span>
+        <li><div class="dropdwn"><span onclick="myFunction()" class="dropdown">MEET OUR TEAM!</span>
 
           <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="person1.html">Jane Doe</a>
+            <a href="person2.html">John Doe</a>
+            <a href="person3.html">Joan Smalls</a>
             </div>
         </div>
         </a> </li>
         <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">GALLERY</a> </li>
-        <li><a href="#MEET">MEET OUR TEAM!</a></li>
+        <li><a href="gallery.html">GALLERY</a> </li>
+        
     </ul>
   </nav>
 </div style="background-color: #2a2a2a; ">
@@ -82,6 +93,7 @@
   
 </div>
 </header>
+
 <script src="jquery-1.11.2.min.js"></script>
   <script>
     $(document).ready(function(){
