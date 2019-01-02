@@ -25,13 +25,13 @@ body{
     
 		}
 
-    .divs{
-      border-left: 1px solid #aaaaaa;
+    
     }
 
     #div1{
       width: 26%;
       padding:2%;
+     border-left:5px solid #aaaaaa;
     }
 
     .info{
