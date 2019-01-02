@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+  }
+  .titujt{
+    font-size: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  #text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9,#text10{
+    display: none;
+      }
+       
+.paragrafi10{
+			width:1000px;
+			margin-left: 200px;
+			}
+#titulli{
+	font-size: 20px;
+	}
+.paragrafi20{
+      font-family: Arial, Helvetica, sans-serif;
+			font-size: 1em;
+      margin-right :2%;
+      margin-left: 2%;
+      width: 66%;
+    
+		}
+
+    .divs{
+      border-left: 1px solid #aaaaaa;
+    }
+
+    #div1{
+      width: 26%;
+      padding:2%;
+    }
+
+    .info{
+      max-width: 92%; 
+      padding: 4%
+    }
+
+    .divElement{
+      border-right:  5px solid #dddddd;
+      border-left: 5px solid #dddddd;
+      background-color: #eeeeee;
+      position: center;
+      width: 70%;
+      display: flex;
+      margin-right: 15%;
+      margin-left: 15%;
+      }
