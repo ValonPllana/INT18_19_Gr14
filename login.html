@@ -8,12 +8,15 @@
 		padding: 0;
 		margin: 0;
 		border:0;
+		background-image: url("images/loginbackground.jpg");
 	}
 	.login{
-		width: 20%;
-		margin-left: 40%;
+		width: 30%;
+		margin-top: 18%;
+		margin-left: 35%;
 		text-align: center;
-		background-color: lightblue;
+		background-color: rgba(0,0,0,0.5);
+		height: 300px;
 	}
 	.login form{
 		width: 100%;
@@ -21,13 +24,16 @@
 	.login h2{
 		margin-top: 10px;
 		font-size: 2em;
+		color: white;
 	}
 	.login p{
+
 		font-size: 1.2em;
 		margin: 0;
 		margin-top: 5px;
 		text-align: left;
 		padding-left: 14%;
+		color: white;
 	}
 	.login input{
 		font-size: 1.1em;
@@ -36,6 +42,7 @@
 	.login button{
 		font-size: 1.1em;
 		margin-bottom: 10px;
+		margin-top: 10px;
 	}	
 	</style>
 </head>
@@ -49,8 +56,8 @@
 		<p>Password:</p>
 		<input type="password" placeholder="password" name="password"/>
 		<br>
-		<input type="submit" name="submit" value="Log In">
-		<button>Sign Up</button>
+		<button><a href="index.html" style="text-decoration:none ;color: black;" > Log In</a></button>
+		<p style="color: white;margin-left: 10%">Don't have an account? &nbsp;<a href="signup.html" id="log" style="color: rgb(100,100,255);">Sign Up</a></p>
 	</form>
 	</div>
 </body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign up</title>
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+		border:0;
+		background-image: url("images/loginbackground.jpg");
+	}
+	#signup{
+		width: 30%;
+		margin-top: 10%;
+		margin-left: 35%;
+		text-align: center;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#signup input,#signup select{
+		margin-top: 10px;
+		font-size: 1.1em;
+		
+	}
+	#signup h2{
+		margin-top: 10px;
+		font-size: 2em;
+		color: white;
+	}
+	#signup p{
+		font-size: 1.1em;
+		margin: 0;
+		margin-top: 5px;
+		text-align: left;
+		padding-left: 14%;
+		color: white;
+	}
+	#gender{
+		color:white 
+	}
+	
+</style>
+</head>
+<body> 
+	<form id="signup">
+			<h2>Sign up</h2>
+            
+            <p>Username</p>
+			<input type="text" name="uname" placeholder="Username" ><br>
+			
+			<p>Email</p>
+			<input type="email" name="email" placeholder="Email" ><br>
+			
+			<p>Password</p>
+			<input type="password" name="password" placeholder="password" ><br>
+			
+			<p>Numri tel</p>
+			<select id="ph"><option>+377</option><option>+383</option><option>+386</option></select>
+
+			<input type="text" name="num" placeholder="Enter your phone number!"><br><br>
+
+			<input type="radio" name="gender" >&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender">Male</span>
+			<input type="radio" name="gender" >&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender">Female</span><br><br>
+
+			<p style="color: white;font-size: 1em;" >By creating an account you agree to our <a href="#" style="color:rgb(100,100,255);">Terms & Privacy</a></p>
+			<input type="submit" value="Sign up" id="button"><br><br>
+
+			<p style="color: white;margin-left: 14%;font-size: 1em">Already have an account? &nbsp;<a href="logIn.html" target="_blank" id="log" style="color: rgb(100,100,255)">Log In</a></p>
+
+		</form>
+
+</body>
+</html>
