@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kerkesat</title>
+</head>
+<body>
+	<audio controls>
+		<source src="audio/MoonlightSonata (1).mp3" type="audio/mpeg">
+	</audio>
+	<audio controls>
+		<source src="audio/Symphony25.mp3" type="audio/mpeg">
+	</audio>
+
+		<canvas id="flag" style="border:1px solid grey; margin-top: 50px;" >
+    Your browser does not support HTML5.
+</canvas>
+
+<script>
+var canvas = document.getElementById('flag');
+
+canvas.width = 570;
+canvas.height = 300;
+
+var c = canvas.getContext('2d');
+
+c.fillRect(0,0,570,100);
+
+c.fillStyle = 'rgba(222,0,0,1)'
+
+c.fillRect(0,100,570,100)
+
+c.fillStyle = 'rgba(254,206,0,1)'
+
+c.fillRect(0,200,570,100)
+
+</script>
+
+</body>
+</html>
