@@ -12,3 +12,10 @@
     border: 4px groove blue;
     background: black;
   }
+  h1{
+    font-style: italic;
+  }
+  #score1{
+    text-decoration: underline;
+    font-size: 20px;
+  }
