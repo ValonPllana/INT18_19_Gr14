@@ -4,6 +4,8 @@
 	<title>Kerkesat</title>
 </head>
 <body>
+	<div id="clocky">
+</div>
 	<audio controls>
 		<source src="audio/MoonlightSonata (1).mp3" type="audio/mpeg">
 	</audio>
@@ -34,6 +36,31 @@ c.fillStyle = 'rgba(254,206,0,1)'
 c.fillRect(0,200,570,100)
 
 </script>
+<script>function time(){
+	var today = new Date();
+	var h = today.getHours()
+  if (h>12) {h= h- "12"} ;
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clocky').innerHTML = h + ":" + m + ":" + s;
+  var r = parseInt(s) * 1;
+  var g = parseInt(s) * 3;
+  var b = parseInt(s) * 5;
+  document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+  var t = setTimeout(time, 500);
+}
+
+function checkTime(i) {
+	if (i < 10) {i = "0" + i};
+	return i;
+}
+
+time();
+</script>
+
+
 
 </body>
 </html>
