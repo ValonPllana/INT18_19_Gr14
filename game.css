@@ -1,0 +1,14 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  canvas {
+    margin-top: 2%; 
+    border: 4px groove blue;
+    background: black;
+  }
