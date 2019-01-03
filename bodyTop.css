@@ -159,7 +159,7 @@
 	.slideformat
 	{
 
-    max-width: 1500px;
+    max-width: 98%;
     height: 600px;
   	position: relative;
   	margin: auto;
@@ -235,7 +235,7 @@
 	{
 	position:absolute;
 	margin-top:-22px;
-	margin-left:18px;
+	margin-left:1.7%;
 
 	}	
 
