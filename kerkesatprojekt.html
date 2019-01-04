@@ -4,7 +4,7 @@
 	<title>Kerkesat</title>
 </head>
 <body>
-	<div id="clocky">
+	<div id="clock">
 </div>
 	<audio controls>
 		<source src="audio/MoonlightSonata (1).mp3" type="audio/mpeg">
@@ -44,7 +44,7 @@ c.fillRect(0,200,570,100)
   var s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('clocky').innerHTML = h + ":" + m + ":" + s;
+  document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
   var r = parseInt(s) * 1;
   var g = parseInt(s) * 3;
   var b = parseInt(s) * 5;

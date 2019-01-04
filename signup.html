@@ -48,18 +48,18 @@
 			<h2>Sign up</h2>
             
             <p>Username</p>
-			<input type="text" name="uname" placeholder="Username" ><br>
+			<input type="text" name="uname" placeholder="Username" class="input" ><br>
 			
 			<p>Email</p>
-			<input type="email" name="email" placeholder="Email" ><br>
+			<input type="email" name="email" placeholder="Email" class="input"><br>
 			
 			<p>Password</p>
-			<input type="password" name="password" placeholder="password" ><br>
+			<input type="password" name="password" placeholder="password" class="input" ><br>
 			
 			<p>Numri tel</p>
 			<select id="ph"><option>+377</option><option>+383</option><option>+386</option></select>
 
-			<input type="text" name="num" placeholder="Enter your phone number!"><br><br>
+			<input type="text" name="num" placeholder="Enter your phone number!" class="input" ><br><br>
 
 			<input type="radio" name="gender" >&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender">Male</span>
 			<input type="radio" name="gender" >&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender">Female</span><br><br>
@@ -71,5 +71,21 @@
 
 		</form>
 </div>
+
+<script src="jquery-1.11.2.min.js"></script>
+
+<script >
+	$(document).ready(function(){	
+		
+		$(".input").focus(function(){
+                  $(this).css("background-color", "#aaaaaa"); 
+               });
+        
+        $(".input").blur(function(){
+                  $(this).css("background-color", "#555555"); 
+                   });
+   });
+
+</script>
 </body>
 </html>

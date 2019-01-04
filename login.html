@@ -58,18 +58,40 @@
 	<h2>Log In</h2>
 	<form action="#">
 		<p>Username:</p>
-		<input type="text" placeholder="Username" name="username"/>
+		<input class="input" type="text" placeholder="Username" name="username"/>
 		<br>
+		
 		<p>Password:</p>
-		<input type="password" placeholder="password" name="password"/>
+		<input class="input" type="password" placeholder="Password" name="password"/>
 		<br>
+		
 		<div id="input">
 		<input type="checkbox" name="rememberme"><span style="color: white;padding-top: 2px;">Remember me</span>
 	     </div>
 		<br>
+		
 		<button><a href="index.html" style="text-decoration:none ;color: black;" > Log In</a></button>
-		<p style="color: white;margin-left: 15%;font-size: 1em">Don't have an account? &nbsp;<a href="signup.html" id="log" style="color: rgb(100,100,255);">Sign Up</a></p>
+		<p style="color: white;margin-left: 15%;font-size: 1em">Don't have an account? &nbsp;<a href="signup.html" id="log" style="color: rgb(100,
+        100,255);">Sign Up</a></p>
+	
 	</form>
 	</div>
+	
+	<script src="jquery-1.11.2.min.js"></script>
+	
+	<script >
+		window.alert("To 'Log in' secure for you better conditions on this page and different actions!");
+
+		$(document).ready(function(){	
+		
+		$(".input").focus(function(){
+                  $(this).css("background-color", "#aaaaaa"); 
+               });
+        
+        $(".input").blur(function(){
+                  $(this).css("background-color", "#555555"); 
+                   });
+   });
+	</script>
 </body>
 </html>
