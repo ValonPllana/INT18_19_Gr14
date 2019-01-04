@@ -1087,3 +1087,17 @@
 		display: none;
 	}
 
+	#a12style{
+		color: white;
+		text-align: center;
+		margin-top: 100px;1
+	}
+
+	#a12paragraph{
+		position: absolute;
+		margin-top: 200px;
+		margin-left: 380px;
+		font-size: 20px;
+		width: 50%;
+		
+	}
