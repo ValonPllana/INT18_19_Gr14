@@ -4,7 +4,12 @@
   <link rel="stylesheet" type="text/css" href="header.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
 <link rel="stylesheet" type="text/css" href="trendingnews.css">
-  
+  <style type="text/css">
+    #titull{
+      text-transform: uppercase;
+    }
+
+  </style>
 </head>
 <body>
   
@@ -35,7 +40,7 @@
 <button id="plusi">+</button>
 
 <div id="rreshti2">
-  <h1 id="titull"><big><big>E</big></big>UONYMUS</h1> 
+  <h1 id="titull"><big><big>e</big></big>uonymus</h1> 
 
 <div id="searchbar">
 <input id="textsearch" type="text" placeholder="Search Our Website...">
@@ -325,7 +330,69 @@
         </div>
     	</div>
        <div id="div1">
-                   <div style="border-bottom: 8px solid #bbbbbb;font-size: 30px">
+                    <div class="divs orderedlist">
+                <p style="font-size: 1.1em;border-bottom: 5px solid #bbbbbb"><em>Vote for the best</em></p>
+                <ol>
+                 <input type="radio" name="best"> 
+                  <li>SAMSUNG NOTE 9</li><br>
+                  
+                 <input type="radio" name="best">
+                  <li> HUAWEI MATE 20 </li><br>
+                  
+                  <input type="radio" name="best"> 
+                  <li>GOOGLE PIXEL 3 XL</li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>APPLE IPHONE XS </li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>ONEPLUS 6T</li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>HUAWEI P20 </li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>IPHONE XR</li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>LG V40 THINQ</li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>SONY XPERIA XZ3</li><br>
+                  
+                  <input type="radio" name="best">
+                  <li>SAMSUNG S9/S9 PLUS</li><br>
+                 </ol>
+                 <p style="margin-left: 30%"> <button onclick="clickCounter()" type="button">Vote now</button></p>
+                 
+                 <div id="poll"></div>
+               <script>
+
+function clickCounter() 
+{
+  if (typeof(Storage) !== "undefined")
+ {
+    if (localStorage.clickcount) 
+{
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    }
+ else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("poll").innerHTML = "This poll has been voted " + localStorage.clickcount + " time(s).";
+  } 
+else {
+    document.getElementById("poll").innerHTML = "Sorry, your browser does not support .";
+  }
+}
+
+</script>
+
+               
+               </div>
+                  
+
+                   <div style="border-bottom: 5px solid #bbbbbb;font-size: 20px">
                      Other...
                     </div>
 
@@ -376,6 +443,8 @@
                   After customers noticed yesterday that the Essential Phone was out of stock on...<br><a href="#">Read more &raquo;</a> 
                 </p>
                </div>
+
+              
     </div>
     
   </div>
