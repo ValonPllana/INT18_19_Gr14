@@ -1,23 +1,24 @@
 var partIndex = 1;
 
 
-function plusPart(n) {
-  showSlides(partIndex += n);
+function plusParts(r) {
+  showSlides(slideIndex += r);
 }
 
 
 
-function showParts(n) {
-  var i;
+function showParts(r) {
+  var j;
   var parts = document.getElementsByClassName("part1");
-  if (n > parts.length) {partIndex = 1}    
-  if (n < 1) {partIndex = parts.length}
-  for (i = 0; i < parts.length; i++) {
-      parts[i].style.display = "none";  
+
+  if (r > parts.length) {partIndex = 1}    
+  if (r < 1) {partIndex = parts.length}
+  for (j = 0; j < parts.length; j++) {
+      parts[j].style.display = "none";  
   }
 
   parts[partIndex-1].style.display = "block"; 
-  
+   
 }
 
 showParts(partIndex);
