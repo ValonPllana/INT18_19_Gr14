@@ -2,7 +2,7 @@ var partIndex = 1;
 
 
 function plusPart(n) {
-  showSlides(partIndex += n);
+  showParts(partIndex += n);
 }
 
 
@@ -20,4 +20,5 @@ function showParts(n) {
   
 }
 
+  
 showParts(partIndex);
