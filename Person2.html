@@ -25,6 +25,20 @@
       });
     });
   </script>
+   <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked my picture " + sessionStorage.clickcount + " time(s) in this session.<br>Close the browser tab (or window), and try again, and the counter is reset.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 </head>
 <body>
 <header class="page-width">
@@ -83,7 +97,7 @@
 <div class="wrapper">
 <div class="personi">
 <h1>John Doe</h1>
-<img src="images/person2.jpg" alt="personi i dyte"/>
+<img src="images/person2.jpg" alt="personi i dyte" onclick="clickCounter()" />
 <P><h2>CFO</h2></P>
 <p>Hello everyone, my name is John Doe, and I am the person who helped the one who made it all Happen.</p>
 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
