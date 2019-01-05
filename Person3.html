@@ -25,6 +25,20 @@ body{
       });
     });
   </script>
+   <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked my picture " + sessionStorage.clickcount + " time(s) in this session.<br>Close the browser tab (or window), and try again, and the counter is reset.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 </head>
 <body>
 <header class="page-width">
@@ -82,7 +96,8 @@ body{
 <div class="wrapper">
 <div class="personi">
 <h1>Joan Smalls</h1>
-<img src="images/person3.jpg" alt="personi i trete"/>
+<img src="images/person3.jpg" alt="personi i trete" onclick="clickCounter()" />
+<div id="result"></div>
 <p><h2>COO</h2></p>
 <p>Hello everyone, my name is Joan Smalls, and I am the chief operating officer.</p>
 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
