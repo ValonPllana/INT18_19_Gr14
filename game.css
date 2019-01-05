@@ -12,7 +12,7 @@
     border: 4px groove blue;
     background: black;
   }
-  h1{
+  #snake{
     font-style: italic;
   }
   #score1{
