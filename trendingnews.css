@@ -13,7 +13,9 @@ body{
   #text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9,#text10{
     display: none;
       }
-       
+  
+
+     
 .paragrafi10{
 			width:1000px;
 			margin-left: 200px;
@@ -84,6 +86,7 @@ body{
      padding:2%;
      font-size:1.1em;
      type:none;
+
  font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
