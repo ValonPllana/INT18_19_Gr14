@@ -3,14 +3,134 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="game.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+
 </head>
 <body>
+<header style="width: 100%;">
+  <div id="e-kalterta">
+  <div id="social">
+  <ul id ="sociallist">
+    <li> <a href="https://www.linkedin.com"><img src="images/linkedinicon.png" alt="Connect on linkedin"></a></li>
+    <li> <a href="https://www.twitter.com"><img src="images/twittericon.png" alt="Follow on twitter"></a></li>
+    <li> <a href="https://www.pinterest.com"><img src="images/pinteresticon.png" alt="Follow on pinterest"></a></li>
+    <li> <a href="https://www.plus.google.com"><img src="images/googleicon.png" alt="Follow on Google+"></a></li>
+    <li> <a href="https://www.rss.com"><img src="images/rssicon.png" alt="Connect on RSS"></a></li>
+  
+</ul>
+</div>
+  	<div class ="login"><a class ="login" href="signup.html">Sign up</a> | <a class ="login" href="login.html">Login</a> | <a class ="login" href="#">RSS Feeds</a> | <a  class ="login" href="#"> Archived News</a></div>
+</div>
+<button id="plusi">+</button>
+
+<div id="rreshti2">
+	<h1 id="titull"><big><big>E</big></big>UONYMUS</h1>	
+
+<div id="searchbar">
+<input id="textsearch" type="text" placeholder="Search Our Website...">
+<input id ="submitsearch" type="submit" name="Submit" value="SUBMIT">
+</div>
+</div>
+
+
+<div id="menu">
+	<nav >
+		
+		<ul id="navmenu">
+				<li><a id="home" href="index.html">HOME</a> </li>
+				<li><a href="shop.html">SHOP</a> </li>
+				
+				<li><div class="dropdwn"><span onclick="myFunction()" class="dropdown">MEET OUR TEAM!</span>
+
+					<div id="myDropdown" class="dropdown-content">
+    				<a href="person1.html">Jane Doe</a>
+   					<a href="person2.html">John Doe</a>
+    				<a href="person3.html">Joan Smalls</a>
+  					</div>
+				</div>
+				</a> </li>
+				<li><a href="trendingnews.html">TRENDING NEWS</a></li>
+				<li><a href="gallery.html">GALLERY</a> </li>
+				<li><a href="game.html">FUN</a> </li>
+				
+		</ul>
+	</nav>
+</div style="background-color: #2a2a2a; ">
+
 <div>
+	
+</div>
+</header>
+<div id="game1">
   <h1>Snake</h1>
 <canvas width="400" height="400" id="game"></canvas>
 
   <div id="score1">Score: <span id="score"></span></div>
 </div>
+<footer class="page-width">
+		<a href="#top"><img src="images/gotop.png" alt="Gotop" id="gotop""></a>
+		<hr class="footer-hr">
+		<div id="footerd">
+			<div class="footer-div">
+				<p class="f-title">COMPANY DETAILS</p>
+				<address>
+				<p class="f-text">Euonymus <br>
+				   13th Avenue 16 <br>
+				   Brooklyn<br>
+				   NewYork<br>
+				   1001
+				</p>
+				</address>
+				<p class="f-text">
+					Tel:0000 000001 <br>
+					Fax:0000 000002 <br>
+					Email:euonymus@euonymus.com
+				</p>
+			</div>
+			<div class="footer-div">
+				<p class="f-title">Top Tech</p>
+				<div class="f-lb">
+					<img src="images/xs.jpg" alt="tt" width="48px" height="48px" class="f-left">
+					<p class="f-text"> Iphone XS - Welcome to the big screens<br>
+						<small>Friday , 6th April 2018</small>
+					</p>
+				</div>
+				<div class="f-lb">
+					<img src="images/13.jpg" alt="tt" width="48px" height="48px" class="f-left">
+					<p class="f-text"> 	Dell XPS - Designed to be the best<br>
+						<small>Friday , 6th April 2018</small>
+					</p>
+				</div>
+				<div class="f-lb">
+					<img src="images/15.png" alt="tt" width="48px" height="48px" class="f-left">
+					<p class="f-text"> 	Apple Watch - Fundamentally redesigned and re-engineered <br>
+						<small>Friday , 6th April 2018</small>
+					</p>
+				</div>
+				<hr class="footer-hr">
+			</div>
+			<div class="footer-div">
+				<p class="f-title">QUICK LINKS</p>
+				<ol type="&raquo;">
+				<a href="trendingnews.html">&raquo;   Trending News</a><br>
+				<a href="iPhonexs.html">&raquo;   Iphone XS</a><br>
+				<a href="gallery.html">&raquo;   Gallery</a>
+				</ol>
+			</div>
+			<div class="footer-div">
+				<p class="f-title">CONTACT US</p>
+				<form action="#">
+					<input type="text" name="Name" placeholder="Name" class="contactus"/><br>
+					<input type="email" name="Email" placeholder="Email" class="contactus"/><br>
+					<textarea rows="4" class="contactus">Message</textarea> <br>
+					<input type="submit" name="Submit" value="SUBMIT" id="f-submit">
+				</form>
+			</div> 
+		</div>
+		<hr class="footer-hr">
+		<p id="f-cr"><em>Copyright &copy; 2019 Euonymus - All rights reserved</em></p>
+	</footer>
 </body>
 </html>
 <script src="game.js"></script>

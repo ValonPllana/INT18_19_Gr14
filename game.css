@@ -4,8 +4,8 @@
     border: 0;
   }
   body {
-    display: flex;
-    justify-content: center;
+    display: relative;
+
   }
   canvas {
     margin-top: 2%; 
@@ -18,4 +18,8 @@
   #score1{
     text-decoration: underline;
     font-size: 20px;    
+  }
+  #game1{
+    position: relative;
+    margin-left: 40%;
   }
