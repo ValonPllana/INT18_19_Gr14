@@ -1091,21 +1091,50 @@
   	background-color:black;
 	}
 
-	.part1{
+	.part1
+	{
 		display: none;
 	}
 
-	#a12style{
+	#a12style
+	{
+		font-size: 300%;
 		color: white;
 		text-align: center;
-		margin-top: 100px;1
+		margin-top: 100px;
 	}
 
-	#a12paragraph{
+	#a12paragraph
+	{
 		position: absolute;
 		margin-top: 200px;
 		margin-left: 380px;
 		font-size: 20px;
 		width: 50%;
 		
+	}
+
+	.gradientText
+	{	
+		font-size: 200%;
+		margin:10% 10%;
+		background: -webkit-linear-gradient(white,#42a1f4);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+
+	}
+
+	#camtext
+	{
+		font-size:300%;
+		margin: 10% 10%;
+		text-align: center;
+
+	}
+
+	.camp
+	{
+		width:50%;
+		font-size: 200%;
+		margin-left: 10%;
 	}
