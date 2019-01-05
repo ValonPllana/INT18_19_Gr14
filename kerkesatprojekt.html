@@ -3,6 +3,21 @@
 <head>
 	<title>Kerkesat</title>
 </head>
+
+<style>
+#testtrans{
+	 height: 200px;
+  	width: 200px;
+  	 box-shadow:  10px 10px 10px rgba(255, 0, 0, 1);
+	 background-image: linear-gradient(to right, red , yellow);
+	transition: width 2s;
+  	-webkit-transition: width 2s, height 2s;
+    }
+#testtrans:hover{
+     width: 500px;
+     height: 500px;
+}
+</style>
 <body>
 	<div id="clock">
 </div>
@@ -59,7 +74,18 @@ function checkTime(i) {
 
 time();
 </script>
+<p>LED Definition</p>
+<dl>
+	<dt>L</dt>
+	<dd>LIGHT</dd>
+	<dt>E</dt>
+	<dd>EMITTING</dd>
+	<dt>D</dt>
+	<dd>DIODE</dd>
+</dl>
 
+<div id="testtrans">
+</div>
 
 
 </body>

@@ -3,6 +3,7 @@
 <head>
 	<title>Shop</title>
 	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
 	<style>
 		body{
 			padding: 0;
@@ -158,8 +159,63 @@
 			window.alert("Thank you for buying!");
 		}
 	</script>
+
 </head>
 <body>
+	<header class="page-width">
+  <div id="e-kalterta">
+  <div id="social">
+  <ul id ="sociallist">
+    <li> <a href="https://www.linkedin.com"><img src="images/linkedinicon.png" alt="Connect on linkedin"></a></li>
+    <li> <a href="https://www.twitter.com"><img src="images/twittericon.png" alt="Follow on twitter"></a></li>
+    <li> <a href="https://www.pinterest.com"><img src="images/pinteresticon.png" alt="Follow on pinterest"></a></li>
+    <li> <a href="https://www.plus.google.com"><img src="images/googleicon.png" alt="Follow on Google+"></a></li>
+    <li> <a href="https://www.rss.com"><img src="images/rssicon.png" alt="Connect on RSS"></a></li>
+  
+</ul>
+</div>
+  	<div class ="login"><a class ="login" href="signup.html">Sign up</a> | <a class ="login" href="login.html">Login</a> | <a class ="login" href="#">RSS Feeds</a> | <a  class ="login" href="#"> Archived News</a></div>
+</div>
+<button id="plusi">+</button>
+
+<div id="rreshti2">
+	<h1 id="titull"><big><big>E</big></big>UONYMUS</h1>	
+
+<div id="searchbar">
+<input id="textsearch" type="text" placeholder="Search Our Website...">
+<input id ="submitsearch" type="submit" name="Submit" value="SUBMIT">
+</div>
+</div>
+
+
+<div id="menu">
+	<nav >
+		
+		<ul id="navmenu">
+				<li><a id="home" href="index.html">HOME</a> </li>
+				<li><a href="shop.html">SHOP</a> </li>
+				
+				<li><div class="dropdwn"><span onclick="myFunction()" class="dropdown">MEET OUR TEAM!</span>
+
+					<div id="myDropdown" class="dropdown-content">
+    				<a href="person1.html">Jane Doe</a>
+   					<a href="person2.html">John Doe</a>
+    				<a href="person3.html">Joan Smalls</a>
+  					</div>
+				</div>
+				</a> </li>
+				<li><a href="trendingnews.html">TRENDING NEWS</a></li>
+				<li><a href="gallery.html">GALLERY</a> </li>
+				<li><a href="game.html">FUN</a> </li>
+				
+		</ul>
+	</nav>
+</div style="background-color: #2a2a2a; ">
+
+<div>
+	
+</div>
+</header>
 	<div class="main-menu">
 		<div id="div1">
 			<div>
@@ -414,3 +470,13 @@
 	</footer>
 </body>
 </html>
+<script src="http://ajax.googleapis.com/ajax"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script >
+		$(document).ready(function(){
+			$("#plusi").click(function(){
+				$("#e-kalterta").slideToggle("slow");
+				
+			});
+		});
+	</script>
