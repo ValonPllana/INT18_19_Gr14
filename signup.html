@@ -43,8 +43,22 @@
 </style>
 </head>
 <body> 
+<script>
+function validForm() {
+  var x = document.forms["myForm"]["uname"].value;
+  var y= document.forms["myForm"]["email"].value;
+  var z= document.forms["myForm"]["password"].value;
+  var v= document.forms["myForm"]["num"].value;
+ 
+  if (x == "" || y=="" || z=="" || v=="") {
+    alert("You should fill out all text space");
+    return false;
+  }
+}
+</script>
+
 	<div id="signup">
-	<form >
+	<form name="myForm"  onsubmit="return validForm()" method="post">
 			<h2>Sign up</h2>
             
             <p>Username</p>
@@ -65,7 +79,8 @@
 			<input type="radio" name="gender" >&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender">Female</span><br><br>
 
 			<p style="color: white;font-size: 1em;" >By creating an account you agree to our <a href="#" style="color:rgb(100,100,255);">Terms & Privacy</a></p>
-			<input type="submit" value="Sign up" id="button"><br><br>
+			
+			<input type="submit" value="Sign up"  id="button"><br><br>
 
 			<p style="color: white;margin-left: 14%;font-size: 1em">Already have an account? &nbsp;<a href="logIn.html" target="_blank" id="log" style="color: rgb(100,100,255)">Log In</a></p>
 
